@@ -1,0 +1,3 @@
+An example simple BSP layer for Yocto/OE which tries to show a simple way to
+customize the kernel and u-boot for a specific board using git repos which are
+"local."
