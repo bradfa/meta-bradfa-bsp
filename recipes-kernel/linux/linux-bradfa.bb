@@ -6,7 +6,7 @@ require recipes-kernel/linux/linux-yocto.inc
 # files/ directory.
 SRC_URI = " \
 	git://${TOPDIR}/../linux/;protocol=file;nocheckout=1;name=machine;branch=${MACHINE} \
-	file://${MACHINE}.defconfig \
+	file://${MACHINE}.cfg \
 	"
 
 LINUX_VERSION ?= "0.0"
