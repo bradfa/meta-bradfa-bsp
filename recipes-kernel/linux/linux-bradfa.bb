@@ -1,11 +1,14 @@
 inherit kernel
 require recipes-kernel/linux/linux-yocto.inc
 
+PR = "r1"
+
 # For your linux git repo, name a branch the same as your ${MACHINE} name and
 # define the name of your kernel defconfig as ${MACHINE}.defconfig within the
 # files/ directory.
+KBRANCH = "${MACHINE}"
 SRC_URI = " \
-	git://${TOPDIR}/../linux/;protocol=file;nocheckout=1;name=machine;branch=${MACHINE} \
+	git://${TOPDIR}/../linux/;protocol=file;nocheckout=1;name=machine \
 	file://${MACHINE}.cfg \
 	"
 
